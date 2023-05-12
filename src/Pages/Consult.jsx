@@ -1,12 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Consult.css"
 
 const Consult = () => {
-  // Funktionen körs när komponenten mountas (visas för första gången)
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0 });
-  }, []);
 
   return (
     <>

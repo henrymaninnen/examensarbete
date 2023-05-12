@@ -13,9 +13,7 @@ import ConvendumKontor from "../Images/ConvendumKontor.jpg";
 const News = () => {
   return (
     <>
-      {/*  Header/Nav
-        amp Seo(Accelerated Mobile Pages), first pain above the fold, varför 
-           speedfast */}
+      {/*  Header/Nav */}
       <header>
         <nav>
           <ul>
@@ -96,7 +94,7 @@ const News = () => {
             <p className="article-text">
               Shaya Solutions närvarade på Techarenan Summit
             </p>
-            <a>Läs mer</a>
+            <a>Läs mer om nyheten</a>
           </article>
         </section>
       </main>

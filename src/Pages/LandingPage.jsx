@@ -21,7 +21,7 @@ const LandingPage = () => {
     <h1 className="heading-h1">
       Mitt examensarbete
     </h1>
-    <h3 className="heading-h2">Seo & Tillgänglighet</h3>
+    <h2 className="heading-h2">Seo & Tillgänglighet</h2>
     <p className="heading-p">
       Henry Cantwell - Fend 21
     </p>
