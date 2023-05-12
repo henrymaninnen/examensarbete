@@ -1,0 +1,8 @@
+1. Gå in på min github: https://github.com/henrymaninnen?tab=repositories
+2. Välj repot "examensarbete"
+3. Kopiera repots adress
+4. Gå in på ny Visual Studio Code flik
+5. Öppna terminalen och skriv detta command "git clone "mitt repos adress"".
+6. Spara den i en fil på datorn.
+7. Gå in i rätt fil med hjälp cd kommandot.
+8. Sist men inte minst, skriv "npm start" för att få mitt projekt i din lokala miljö

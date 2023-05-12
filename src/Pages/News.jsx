@@ -1,8 +1,21 @@
 import { Link } from "react-router-dom";
+import "./News.css";
+
+import LazyLoad from "react-lazy-load";
+
+import shayaXmindler from "../Images/shayaXmindler.png";
+import shayaArsredovisning from "../Images/shayaArsredovisning.png";
+import ShayaPaResturang from "../Images/ShayaPaResturang.jpg";
+import techArenanSummit from "../Images/techArenanSummit.jpeg";
+import UppsalaUniversitet from "../Images/UppsalaUniversitet.jpeg";
+import ConvendumKontor from "../Images/ConvendumKontor.jpg";
+
 const News = () => {
   return (
     <>
-      {/*  Header/Nav */}
+      {/*  Header/Nav
+        amp Seo(Accelerated Mobile Pages), first pain above the fold, varför 
+           speedfast */}
       <header>
         <nav>
           <ul>
@@ -15,50 +28,78 @@ const News = () => {
           </ul>
         </nav>
       </header>
-      <div className="container-enviornment">
-        <div className="enviornment-wrapper">
-          <h1>Miljö och hållbarhet</h1>
-          <div className="enviornment-hero">
-            <h2>Människor och relationer i fokus</h2>
-            <p>
-              Shaya Solutions grundades 2016 med fokus att hjälpa personer, som
-              trots djup utbildning och akademisk teknisk kompetens ej fick ett
-              arbete eller konsultuppdrag.
-              <br /> <br /> Detta härleddes ofta till okunskap och bristande
-              kännedom om hur man bemöter, förvaltar och utvecklar kompetens,
-              kunskap och talanger. Verksamheten har sedan oktober 2018 breddats
-              till att omfatta hela arbetsmarknaden.{" "}
-            </p>
-          </div>
+      {/*  Wrapper för allt innehåll på nyhetssidan */}
+      <main className="News-Main">
+        {/*  Wrapper för nyhets sektionen */}
+        <section>
+          {/* Varje enskild nyhet */}
 
-          <div className="enviornment-content-wrapper">
-            {" "}
-            <h2>Miljö och arbete går hand i hand</h2>
-            <div className="underline-small"></div>
-            <p>
-              Vid FN:s toppmöte den 25 september 2015 antog världens stats-och
-              regeringschefer 17 globala mål och Agenda 2030 för hållbar
-              utveckling. Världens länder har åtagit sig att från och med den 1
-              januari 2016 fram till år 2030 leda världen mot en hållbar och
-              rättvis framtid. Vi har valt att konstruera vårt miljö-och
-              hållbarhetsarbete utifrån Shaya Solutions verksamhet där vi har
-              möjlighet att påverka.
+          <article>
+            <img
+              src={shayaXmindler}
+              alt="Bild på att Shaya solutions har skrivit avtal med Mindler"
+            ></img>
+            <p className="article-text">
+              Shaya Solutions har skrivit avtal med Mindler
             </p>
-            <span>
-              Vill du veta mer om hur vi jobbar med miljö och hållbarhet? Läs
-              texten i sin helhet.
-            </span>
-            <a
-              href="https://onedrive.live.com/?authkey=%21AE927R1sMdojc%2Ds&cid=8DE706180B3577D6&id=8DE706180B3577D6%217669&parId=8DE706180B3577D6%216122&o=OneUp"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-envior"
-            >
-              Läs mer
-            </a>
-          </div>
-        </div>
-      </div>
+            <a>Läs mer om nyheten</a>
+          </article>
+
+          <article>
+            <img
+              src={shayaArsredovisning}
+              alt="Bild på vad Shaya solutions gör och hur de gör det"
+            ></img>
+            <p className="article-text">
+              Sammanfattning av årsredovisning för 2021
+            </p>
+            <a>Läs mer om nyheten</a>
+          </article>
+
+          <article>
+            <img
+              src={UppsalaUniversitet}
+              alt="Bild på att Ångströmlaboratoriet/Uppsala Universitet<"
+            ></img>
+            <p className="article-text">
+              Ett kärt återseende av Ångströmlaboratoriet och Uppsala
+              Universitet
+            </p>
+            <a>Läs mer om nyheten</a>
+          </article>
+
+          <article>
+            <img
+              src={ConvendumKontor}
+              alt="Bild på kollegor på Shaya solutions kontor"
+            ></img>
+            <p className="article-text">Event på vårt fantastiska konto</p>
+            <a>Läs mer om nyheten</a>
+          </article>
+
+          <article>
+            <img
+              src={ShayaPaResturang}
+              alt="Bild på när teamet på Shaya solutions äter på en resturang"
+            ></img>
+            <p className="article-text">
+              VR aktivitet för teamet på Shaya Solutions
+            </p>
+            <a>Läs mer om nyheten</a>
+          </article>
+
+          <article>
+            <img
+              src={techArenanSummit}
+              alt="Bild på när Shaya Solutions var närvarade på Techarenan Summit"
+            ></img>
+            <p className="article-text">
+              Shaya Solutions närvarade på Techarenan Summit
+            </p>
+            <a>Läs mer</a>
+          </article>
+        </section>
+      </main>
     </>
   );
 };

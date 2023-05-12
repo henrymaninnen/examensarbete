@@ -1,0 +1,95 @@
+/* Wrapper för allt innehåll på nyhetssidan */
+.News-Main {
+    margin: 50px auto 100px auto;
+    max-width: 1400px;
+  }
+  
+  /* Wrapper för nyhets sektionen */
+  .News-Main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  /* Varje enskild nyhet */
+  .News-Main  article {
+    width: 31.33%;
+    margin: 1%;
+    position: relative;
+
+  }
+  
+  /* Bilderna */
+  .News-Main article img {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  /* Mörk overlay på bilderna */
+  .News-Main article::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Text på bilderna */
+  .News-Main  article p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: 70%;
+  }
+  
+  /* Knappar på bilderna */
+  .News-Main  article a {
+    position: absolute;
+    bottom: 20px;
+    border-radius: 20px;
+    right: 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effekt på knapparna */
+  .News-Main  article a:hover {
+    background-color: lightblue;
+  }
+  
+  /* Responsiv design */
+  @media (max-width: 1024px) {
+    .News-Main   article {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .News-Main  article {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .News-Main   article {
+      width: 100%;
+    }
+  }

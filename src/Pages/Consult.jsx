@@ -27,7 +27,7 @@ const Consult = () => {
       <main className="container-consult">
         {/* Container för konsultinnehållet */}
         <section className="consult-content-container">
-          <div className="hero-wrapper">
+          <article className="hero-wrapper">
             {/* Huvudrubrik */}
             <h1>Utveckla din erfarenhet tillsammans med oss</h1>
             {/* Beskrivande text */}
@@ -40,7 +40,7 @@ const Consult = () => {
               konsult. Fokus ligger alltid på intressanta projekt,
               meningsfullhet och samhällsnytta.
             </p>
-          </div>
+          </article>
           {/* Underrubrik */}
           <h2>Process</h2>
           {/* Wrapper för processboxarna */}
@@ -69,6 +69,7 @@ const Consult = () => {
             </article>
           </section>
           {/* Länk till lediga uppdrag */}
+          <p>Klicka då på länken nedan för att se alla våra aktiva uppdrag</p>
           <a
             className="btn-blue"
             href="https://career.shayasolutions.com/#section-jobs"

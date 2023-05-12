@@ -17,6 +17,15 @@ const LandingPage = () => {
         </ul>
       </nav>
     </header>
+    <main>
+    <h1 className="heading-h1">
+      Mitt examensarbete
+    </h1>
+    <h3 className="heading-h2">Seo & Tillgänglighet</h3>
+    <p className="heading-p">
+      Henry Cantwell - Fend 21
+    </p>
+    </main>
     </>
   );
 };
